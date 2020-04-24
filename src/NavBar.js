@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 class NavBar extends Component {
     componentDidMount(){ //window.onload happens once when the components first mounts 
-        console.log(this)
+        //console.log(this)
     }
 
     render() {

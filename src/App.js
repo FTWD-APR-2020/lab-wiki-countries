@@ -12,7 +12,7 @@ class App extends Component {
   state = { }
 
   componentDidMount(){ //window.onload happens once when the components first mounts 
-    console.log(this)  //Get your data from an API or where you'll get data from your server DB. 
+    //console.log(this)  //Get your data from an API or where you'll get data from your server DB. 
   }
 
   render() {

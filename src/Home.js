@@ -7,13 +7,13 @@ console.log(countries)
 //Home is now wrapped in Switch statement so it's props are full of cool stuff that we can use 
 class Home extends Component {
     componentDidMount(){ //window.onload happens once when the components first mounts 
-        console.log(this)
+        //console.log(this)
     }
 
     showCountries = () => {
 
         let links = countries.map(eachCountry => { //Loop thru countries.json and create dynamic links 
-            return <li><Link to={`/country/${eachCountry.cca3}`}>{eachCountry.name.common}</Link></li>})
+            return <li><Link key={eachCountry.cca3} to={`/country/${eachCountry.cca3}`}>{eachCountry.name.common}</Link></li>})
         return links
     }
 
